@@ -1,0 +1,268 @@
+/* ------------------------------- */
+/* RESETS */
+/* ------------------------------- */
+* {
+  margin: 0;
+  padding: o;
+  box-sizing: border-box;
+}
+/* ------------------------------- */
+/* GLOBAL */
+/* ------------------------------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn-one {
+  height: 38px;
+  background: #c44569;
+  border-radius: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+  border: none;
+}
+
+.dark {
+  padding: 15px;
+  background: #2c3e50;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+/* ------------------------------- */
+/* HEADER */
+/* ------------------------------- */
+header {
+  background: #2c3e50;
+  color: white;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: 3px solid #c44569;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header a:hover {
+  color: #c44569;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+header li {
+  text-decoration: none;
+
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  color: #c44569;
+  font-weight: bold;
+}
+
+/* ------------------------------- */
+/* HERO SECTION */
+/* ------------------------------- */
+
+#hero {
+  background: url(./img/showcase.jpg) no-repeat;
+  min-height: 400px;
+  text-align: center;
+  color: white;
+}
+.hero-title {
+  font-size: 55px;
+  margin-bottom: 10;
+  margin-top: 100px;
+}
+#hero p {
+  font-size: 20px;
+}
+
+/* ------------------------------- */
+/* NEWSLETTER SECTION */
+/* ------------------------------- */
+
+#news-letter {
+  padding: 15px;
+  color: white;
+  background: #2c3e50;
+}
+
+#news-letter h1 {
+  float: left;
+}
+#news-letter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#news-letter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+/* ------------------------------- */
+/* BOXES SECTION */
+/* ------------------------------- */
+
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 33%;
+  padding: 10px;
+}
+#boxes .box img {
+  width: 90px;
+}
+
+/* ------------------------------- */
+/* FOOTER SECTION */
+/* ------------------------------- */
+
+footer {
+  color: white;
+  background-color: #cf6a87;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* ------------------------------- */
+/* ABOUT PAGE */
+/* ------------------------------- */
+
+#article-sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+#main-col {
+  float: left;
+  width: 65%;
+}
+.article-title {
+  text-align: center;
+  padding-top: 10px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  color: #e84393;
+}
+
+.sidebar {
+  line-height: 1px;
+  font-size: 1px;
+  font-weight: 50;
+}
+
+/* ------------------------------- */
+/* SERVICES PAGE */
+/* ------------------------------- */
+
+#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cf6a87 solid 1 px;
+  margin-bottom: 5px;
+  background: #cc7f95;
+  color: white;
+}
+
+.service-title {
+  text-align: center;
+  padding-top: 10px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  color: #e84393;
+}
+
+#aside-sidebar {
+  width: 30%;
+  margin-top: 10px;
+  float: right;
+}
+
+#aside-sidebar .quote input {
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+}
+#aside-sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* ------------------------------- */
+/* MEDIA QUERIES */
+/* ------------------------------- */
+
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #news-letter h1,
+  #news-letter form,
+  #boxes .box,
+  #main-col,
+  #article-sidebar,
+  #aside-sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+  .hero-title {
+    margin-top: 40px;
+  }
+  .btn-one,
+  .quote button {
+    display: block;
+    width: 100%;
+  }
+  #news-letter form input[type="email"] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
